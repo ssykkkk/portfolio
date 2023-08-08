@@ -1,0 +1,446 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.resume .res-content .res-block .main-cont .block .name span, .resume .res-content .res-block .main-cont .block .name, .resume .general-res, .resume .point .p-img, .resume .point, .contact form button, .contact form .form-butt, .contact form .form-req .form-ydata, .skills .percent .per-block .per-line, .skills .percent .per-block .per-text, .skills .skill-block .simg, .skills .skill-block, .about-me .about .what-i-do .grid-block > div, .about-me .header .menu ul, .main-info .contacts .social-net .link-img, .main-info .contacts .contact .link-img a, .main-info .contacts .contact, .main-info .main-me .status, .main-info .main-me .name, .main-info .main-me .my-pic {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  font-family: "Teko", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(212, 212, 212);
+  background-color: #26292b;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(212, 212, 212);
+}
+
+li {
+  list-style: none;
+}
+
+.wrap {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 80% 0%;
+  }
+  50% {
+    background-position: 20% 100%;
+  }
+  100% {
+    background-position: 80% 0%;
+  }
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.main-info {
+  overflow: auto;
+  height: calc(100vh - 60px);
+  position: relative;
+  background-color: #2e3239;
+  border-radius: 20px;
+  padding: 30px;
+}
+.main-info::-webkit-scrollbar {
+  width: 10px;
+}
+.main-info::-webkit-scrollbar-track {
+  background: none;
+}
+.main-info::-webkit-scrollbar-thumb {
+  background-color: #a2b2ee;
+  border-radius: 20px;
+  border: 2px solid #26292b;
+}
+.main-info .main-me {
+  margin-top: 30px;
+  border-bottom: 1px solid #a2b2ee;
+}
+.main-info .main-me .my-pic {
+  justify-content: center;
+}
+.main-info .main-me .my-pic img {
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 120px;
+  height: 120px;
+}
+.main-info .main-me .name {
+  margin-top: 20px;
+  justify-content: center;
+}
+.main-info .main-me .name h2 {
+  font-size: 25px;
+}
+.main-info .main-me .status {
+  margin-top: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.main-info .main-me .status span {
+  cursor: default;
+  font-size: 18px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  background: linear-gradient(149deg, rgb(24, 187, 156) 0%, rgb(106, 57, 175) 42%, rgb(187, 24, 148) 72%, rgb(115, 53, 134) 100%);
+  animation: gradient 10s infinite linear;
+  background-size: 400%;
+}
+.main-info .contacts .contact {
+  gap: 20px;
+  margin-top: 30px;
+}
+.main-info .contacts .contact .link-img a {
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid #5f7adb;
+  transition: 0.3s;
+}
+.main-info .contacts .contact .link-img a img {
+  width: 30px;
+  height: auto;
+}
+.main-info .contacts .contact .link-img a:hover {
+  background-color: #26292b;
+  box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+}
+.main-info .contacts .contact .cont-text {
+  display: grid;
+}
+.main-info .contacts .contact .cont-text span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #a2b2ee;
+  text-transform: uppercase;
+}
+.main-info .contacts .contact .cont-text a {
+  font-size: 20px;
+  transition: 0.3s;
+}
+.main-info .contacts .contact .cont-text a:hover {
+  text-decoration: underline;
+}
+.main-info .contacts .social-net {
+  margin-top: 50px;
+}
+.main-info .contacts .social-net .link-img {
+  justify-content: center;
+  gap: 20px;
+}
+.main-info .contacts .social-net .link-img a img {
+  width: 27px;
+  height: auto;
+}
+
+.about-me {
+  overflow: auto;
+  height: calc(100vh - 60px);
+  position: relative;
+  background-color: #2e3239;
+  border-radius: 20px;
+  padding: 20px 30px;
+}
+.about-me::-webkit-scrollbar {
+  width: 10px;
+}
+.about-me::-webkit-scrollbar-track {
+  background: none;
+}
+.about-me::-webkit-scrollbar-thumb {
+  background-color: #a2b2ee;
+  border-radius: 20px;
+  border: 2px solid #26292b;
+}
+.about-me .header .about-h h1 {
+  text-transform: uppercase;
+}
+.about-me .header .line {
+  margin-top: 10px;
+  height: 4px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: #a2b2ee;
+}
+.about-me .header .menu ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+}
+.about-me .header .menu ul li {
+  cursor: pointer;
+  background-color: #5f7adb;
+  transition: 0.5s;
+  padding: 15px 50px;
+}
+.about-me .header .menu ul li:first-child {
+  border-radius: 0 0 0 20px;
+}
+.about-me .header .menu ul li:last-child {
+  border-radius: 0 20px 0 0;
+}
+.about-me .header .menu ul li:hover {
+  background-color: rgb(212, 212, 212);
+  color: #2e3239;
+}
+.about-me .header .menu ul li.active {
+  background-color: #a2b2ee;
+  color: #2e3239;
+}
+.about-me .main-content {
+  animation: fadeEffect 1s;
+}
+.about-me .about .text-me {
+  font-size: 18px;
+}
+.about-me .about .text-me p {
+  margin-top: 20px;
+}
+.about-me .about .what-i-do {
+  margin-top: 20px;
+}
+.about-me .about .what-i-do > h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.about-me .about .what-i-do .grid-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.about-me .about .what-i-do .grid-block > div {
+  background-color: #a2b2ee;
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.about-me .about .what-i-do .grid-block > div .content {
+  margin-left: 30px;
+  color: #26292b;
+}
+.about-me .about .what-i-do .grid-block > div .content b {
+  font-size: 20px;
+}
+.about-me .about .what-i-do .grid-block > div:nth-child(1),
+.about-me .about .what-i-do .grid-block > div:nth-child(4),
+.about-me .about .what-i-do .grid-block > div:nth-child(5) {
+  background-color: #5f7adb;
+}
+.about-me .about .what-i-do .grid-block img {
+  width: 100px;
+}
+
+.skills {
+  margin: 0 80px 0 80px;
+}
+.skills .skill-block {
+  height: 580px;
+  justify-content: space-between;
+}
+.skills .skill-block .simg {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  gap: 80px;
+}
+.skills .skill-block .simg img {
+  width: 110px;
+}
+.skills .percent {
+  display: grid;
+  gap: 30px;
+}
+.skills .percent .per-block .per-text {
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.skills .percent .per-block .per-line div:first-child {
+  height: 10px;
+  background-color: #5f7adb;
+  border-radius: 20px 0 0 20px;
+}
+.skills .percent .per-block .per-line div:last-child {
+  height: 10px;
+  background-color: #a2b2ee;
+  border-radius: 0 20px 20px 0;
+}
+
+.contact form {
+  margin-top: 60px;
+  display: grid;
+  gap: 20px;
+  padding: 30px;
+}
+.contact form .form-req {
+  display: grid;
+  gap: 20px;
+}
+.contact form .form-req input {
+  background-color: #2e3239;
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 20px;
+  outline: none;
+  padding: 10px 20px;
+  color: rgb(212, 212, 212);
+}
+.contact form .form-req input:-moz-placeholder-shown {
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+}
+.contact form .form-req input:placeholder-shown {
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+}
+.contact form .form-req input:valid {
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+}
+.contact form .form-req input:focus {
+  border: 2px solid #a2b2ee;
+}
+.contact form .form-req .form-ydata {
+  gap: 20px;
+}
+.contact form textarea {
+  background-color: #2e3239;
+  color: rgb(212, 212, 212);
+  width: 100%;
+  height: 200px;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 20px;
+  outline: none;
+  padding: 10px 20px;
+  resize: none;
+}
+.contact form textarea:-moz-placeholder-shown {
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+}
+.contact form textarea:placeholder-shown {
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+}
+.contact form textarea:valid {
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+}
+.contact form textarea:focus {
+  border: 2px solid #a2b2ee;
+}
+.contact form .form-butt {
+  justify-content: end;
+  margin-right: 20px;
+}
+.contact form button {
+  width: 180px;
+  height: 50px;
+  justify-content: space-between;
+  background-color: #2e3239;
+  color: rgb(212, 212, 212);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Teko", sans-serif;
+  color: #5f7adb;
+  transition: 0.3s;
+  box-shadow: 3px 3px 4px 0px rgb(95, 122, 219);
+}
+.contact form button img {
+  width: 20px;
+}
+.contact form button:hover {
+  border: 1px solid #5f7adb;
+  background-color: #26292b;
+}
+
+.resume .point {
+  gap: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.resume .point .p-img {
+  box-shadow: 0px 0px 5px 2px rgba(95, 122, 219, 0.5);
+  padding: 10px;
+  border-radius: 20px;
+}
+.resume .point .p-img img {
+  width: 25px;
+}
+.resume .general-res {
+  border: 2px solid #a2b2ee;
+  justify-content: center;
+  gap: 80px;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 22px;
+  border-radius: 20px;
+}
+.resume .general-res .res-img img {
+  width: 120px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.resume .general-res .res-data {
+  display: grid;
+}
+.resume .res-content {
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.resume .res-content .res-block .main-cont {
+  margin-left: 15px;
+}
+.resume .res-content .res-block .main-cont .block {
+  margin-top: 20px;
+}
+.resume .res-content .res-block .main-cont .block .name {
+  gap: 20px;
+}
+.resume .res-content .res-block .main-cont .block .name span {
+  gap: 40px;
+  font-size: 20px;
+}
+.resume .res-content .res-block .main-cont .block .name span::before {
+  content: "•";
+  font-size: 30px;
+  line-height: 10px;
+  color: #5f7adb;
+  font-weight: bold;
+}
+.resume .res-content .res-block .main-cont .block .cont {
+  margin-left: 52px;
+}
+.resume .res-content .res-block .main-cont .block .cont span {
+  font-size: 18px;
+  color: #a2b2ee;
+}/*# sourceMappingURL=style.css.map */
