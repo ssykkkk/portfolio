@@ -1,0 +1,13 @@
+$back-color: #26292b;
+$main-color: #2e3239;
+$accent-color: #5f7adb;
+$less-accent: #a2b2ee;
+$back-colorLight: #f8f9fa;
+$main-colorLight: #e9ecef;
+$font-color: rgb(212, 212, 212);
+$font-size: 16px;
+$border-rad: 20px;
+%flex-aic {
+  display: flex;
+  align-items: center;
+}

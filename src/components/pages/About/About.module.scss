@@ -1,0 +1,59 @@
+@import "../../../var";
+
+.about {
+  // display: none;
+  .textMe {
+    p {
+      margin-top: 20px;
+    }
+  }
+  .whatIDo {
+    margin-top: 20px;
+    > h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .gridBlock {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      > div {
+        background-color: $less-accent;
+        padding: 20px 30px;
+        border-radius: $border-rad;
+        @extend %flex-aic;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        .content {
+          margin-left: 30px;
+          color: $back-color;
+          b {
+            font-size: 20px;
+          }
+        }
+      }
+      > div:nth-child(1),
+      > div:nth-child(4),
+      > div:nth-child(5) {
+        background-color: $accent-color;
+      }
+      img {
+        width: 100px;
+      }
+    }
+  }
+}
+.lightTheme {
+  .whatIDo {
+    .gridBlock {
+      >div{
+        background-color: $accent-color;
+        box-shadow: 10px 10px 5px 0px rgba(134, 134, 134, 0.75);
+      }
+      > div:nth-child(1),
+      > div:nth-child(4),
+      > div:nth-child(5) {
+        background-color: $less-accent;
+      }
+    }
+  }
+}

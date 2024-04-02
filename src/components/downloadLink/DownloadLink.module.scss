@@ -1,0 +1,29 @@
+@import "../../var";
+
+.download{
+    display: grid;
+    gap: 20px;
+    button{
+        padding: 10px 20px;
+        border-radius: $border-rad;
+        border: none;
+        background-color: $accent-color;
+        transition: .5s;       
+        color: $font-color;
+        cursor: pointer;
+        &:hover{
+        background-color: $less-accent;
+        color: $back-color;
+        }
+    }
+}
+.lightTheme{
+button{
+    background-color: $less-accent;
+    color: $back-color;
+    &:hover{
+        background-color: $accent-color;
+
+    }
+}
+}

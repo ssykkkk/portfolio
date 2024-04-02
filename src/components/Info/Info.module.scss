@@ -1,0 +1,95 @@
+@import "../../var";
+
+.mainInfo {
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $less-accent;
+      border-radius: $border-rad;
+      border: 2px solid $back-color;
+    }
+    height: calc(100vh - 60px);
+    position: relative;
+    border-radius: $border-rad;
+    padding: 30px;
+    .mainMe {
+      margin-top: 30px;
+      border-bottom: 1px solid $less-accent;
+      .myPic {
+        @extend %flex-aic;
+        justify-content: center;
+        img {
+          border-radius: $border-rad;
+          object-fit: cover;
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .name {
+        margin-top: 20px;
+        @extend %flex-aic;
+        justify-content: center;
+        h2 {
+          font-size: 22px;
+        }
+      }
+      .status {
+        margin-top: 20px;
+        @extend %flex-aic;
+        justify-content: center;
+        margin-bottom: 30px;
+        span {
+          cursor: default;
+          font-size: $font-size;
+          padding: 5px 15px 5px 15px;
+          border-radius: 10px;
+          background: linear-gradient(
+            149deg,
+            rgba(24, 187, 156, 1) 0%,
+            rgba(106, 57, 175, 1) 42%,
+            rgba(187, 24, 148, 1) 72%,
+            rgba(115, 53, 134, 1) 100%
+          );
+          animation: gradient 10s infinite linear;
+          background-size: 400%;
+        }
+      }
+    }
+    .contacts {
+      .socialNet {
+        margin-top: 50px;
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        .linkImg {
+          @extend %flex-aic;
+          justify-content: center;
+          gap: 20px;
+          a {
+            img {
+              width: 27px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .darkTheme{
+    color: $font-color;
+    background-color: $main-color;
+
+  }
+  .lightTheme{
+    color: $main-color;
+    background-color: $main-colorLight;
+    .status {
+      color: $main-colorLight;
+    }
+  }

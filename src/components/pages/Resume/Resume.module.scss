@@ -1,0 +1,29 @@
+@import "../../../var";
+
+.wrap {
+  @extend %flex-aic;
+  // background-image: url("../../../share/img/resume_bg.PNG");
+  justify-content: center;
+  height: 92%;
+}
+// .bg {
+//   display: flex;
+//   justify-content: center;
+//   img {
+//     filter: blur(2px);
+//     -webkit-filter: blur(2px);
+//     height: 550px;
+//     object-fit: cover;
+//     width: 500px;
+//     border-radius: 20px;
+//     border: 1px solid $accent-color;
+//     opacity: 0.5;
+//   }
+// }
+// .text {
+//   position: absolute;
+//   background-color: $font-color;
+//   padding: 20px 40px;
+//   color: black;
+//   border-radius: $border-rad;
+// }

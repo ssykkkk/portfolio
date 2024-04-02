@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import "var";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+// $back-color: #26292b;
+// $main-color: #2e3239;
+// $accent-color: #5f7adb;
+// $less-accent: #a2b2ee;
+// $back-colorLight: #f8f9fa;
+// $main-colorLight: #e9ecef;
+// $font-color: rgb(212, 212, 212);
+// $border-rad: 20px;
+// %flex-aic {
+//   display: flex;
+//   align-items: center;
+// }
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  // color: $font-color;
+  // background-color: $back-color;
+}
+a {
+  text-decoration: none;
+  color: $font-color;
+}
+button, input, textarea{
+  font-family: "Oswald", sans-serif;
+}
+li {
+  list-style: none;
+}
+.wrap {
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $less-accent;
+    border-radius: $border-rad;
+    // border: 2px solid $back-color;
+  }
+  height: calc(100vh - 60px);
+  position: relative;
+  background-color: $main-color;
+  border-radius: $border-rad;
+  padding: 20px 30px;
+}
+@keyframes gradient {
+  0% {
+    background-position: 80% 0%;
+  }
+  50% {
+    background-position: 20% 100%;
+  }
+  100% {
+    background-position: 80% 0%;
+  }
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.main-content {
+  animation: fadeEffect 1s;
+  // display: none;
+}
