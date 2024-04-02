@@ -18,7 +18,7 @@ export default function Info() {
     <div className={darkMode ? `${styles.darkTheme} ${styles.mainInfo}` : `${styles.lightTheme} ${styles.mainInfo}`}>
       <div className={styles.mainMe}>
         <div className={styles.myPic}>
-          <img src={myPic} alt="My Photo" />
+          <img src={myPic} alt="Me" />
         </div>
         <div className={styles.name}>
           <h2>{t("info.name")}</h2>
@@ -51,16 +51,16 @@ export default function Info() {
         <div className={styles.socialNet}>
           <div className={styles.linkImg}>
             <a href="https://www.instagram.com/ssssss__kkkk">
-              <img src={insta} alt="E-mail" />
+              <img src={insta} alt="instagram" />
             </a>
             <a href="https://t.me/ssykkkk">
-              <img src={telegram} alt="E-mail" />
+              <img src={telegram} alt="telegram" />
             </a>
             <a href="https://github.com/ssykkkk">
-              <img src={github} alt="E-mail" />
+              <img src={github} alt="github" />
             </a>
             <a href="https://www.linkedin.com/in/stanislav-kozak-377590180/">
-              <img src={linkedin} alt="E-mail" />
+              <img src={linkedin} alt="linkedin" />
             </a>
           </div>
         </div>
