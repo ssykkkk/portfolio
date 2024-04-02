@@ -5,7 +5,7 @@ function Resume() {
     
   return (
     <div className={styles.wrap}>
-      <FileDownloadLink fileName="example.txt" />
+      <FileDownloadLink fileName="Resume.pdf" />
     </div>
   );
 }
