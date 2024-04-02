@@ -57,6 +57,7 @@ function Projects() {
           img={htmlImg}
           title={t("projects.html.title")}
           url="https://html-layout-app.netlify.app/"
+          isThird={true}
           openProject={openProject}
           activeProjectId={activeProjectId}
           link="https://github.com/ssykkkk/html-layout.git"
@@ -68,7 +69,6 @@ function Projects() {
           img={libraryImg}
           title={t("projects.library.title")}
           url="http://accounting-of-books.000.pe/books.php"
-          isThird={true}
           openProject={openProject}
           activeProjectId={activeProjectId}
           link="https://github.com/ssykkkk/accounting-of-books--library-.git"
@@ -89,6 +89,7 @@ function Projects() {
           id={6}
           name={t("projects.angl.name")}
           img={reactImg}
+          isThird={true}
           title={t("projects.angl.title")}
           url="https://legendary-sunshine-dfbcb5.netlify.app/"
           openProject={openProject}
