@@ -44,8 +44,7 @@ i18n.use(initReactI18next).init({
           pAbout3: `My English skills allow me to communicate with colleagues and clients,
         understand documentation, and utilize resources related to web
         development. I am confident that I can tackle web development tasks
-        and provide quality solutions, considering best practices. In my
-        opinion, my level of English is between B1 and B2.`,
+        and provide quality solutions, considering best practices. My level of English is between B1 and B2.`,
           pAbout4: `As a front-end developer, my goal is continuous improvement of my
         skills, learning new technologies, and creating innovative and
         user-friendly interfaces. I am ready for collaboration and new
@@ -164,7 +163,7 @@ i18n.use(initReactI18next).init({
           з колегами та клієнтами, розуміти документацію та використовувати
            ресурси, пов'язані з веб-розробкою. Я впевнений, що можу впоратися
             із завданнями з веб-розробки та надавати якісні рішення,
-             дотримуючись найкращих практик. На мою думку, мій рівень англійської
+             дотримуючись найкращих практик. Мій рівень англійської
               знаходиться між рівнями B1 та B2.`,
           pAbout4: `Як розробник фронтенду, моя мета - постійне вдосконалення навичок,
           вивчення нових технологій та створення інноваційних та зручних інтерфейсів
