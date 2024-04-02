@@ -99,7 +99,7 @@ function Contact() {
           />
         </Form.Group>
         <div className={styles.butt}>
-          {succsess && <div className={styles.succsess}>Повідомлення відправлено!</div>}
+          {succsess && <div className={styles.succsess}>{t("contact.succsess")}</div>}
           <Button variant="primary" type="submit">
             <IoIosSend />
             <span>{t("contact.send")}</span>

@@ -87,9 +87,14 @@ i18n.use(initReactI18next).init({
           mess: "Message",
           Emess: "Enter your message",
           send: "Send Message",
+          succsess: "Message successfully sent!"
         },
         projects: {
           butt: "go to the site",
+          portfolio:{
+            name: "Portfolio",
+            title: "My portfolio serves as a showcase of my creativity and skills in frontend development. Within it, I've presented a range of projects that reflect my expertise in utilizing HTML, CSS, JavaScript, and other modern technologies. Each project is accompanied by a description, demonstrating my understanding of user needs and ability to craft aesthetically pleasing and functional web interfaces. I invite you to explore my work and witness my professional approach to web development."
+          },
           flashcards: {
             name: "flashcards",
             title: "Flashcard quizzes are effective tools for learning and reviewing information. They promote active recall, are convenient for studying on-the-go, and can be customized to suit individual needs. Their versatility and engagement make them valuable for mastering a wide range of subjects and concepts.",
@@ -195,9 +200,14 @@ i18n.use(initReactI18next).init({
           mess: "Повідомлення",
           Emess: "Введіть ваше повідомлення",
           send: "Надіслати",
+          succsess: "Повідомлення успішно відправлено!"
         },
         projects: {
           butt: "перейти на сайт",
+          portfolio:{
+            name: "Портфоліо",
+            title: "Моє портфоліо - це візитівка моєї творчості та навичок у сфері фронтенд-розробки. В ньому я представив ряд проектів, які відображають мою експертизу у використанні HTML, CSS, JavaScript та інших сучасних технологій. Кожен проект має опис, демонструючи моє розуміння потреб користувачів та здатність створювати естетичний та функціональний веб-інтерфейс. Запрошую вас ознайомитися з моїми роботами!"
+          },
           flashcards: {
             name: "флешкарти",
             title: "Флешкартки-вікторини є ефективними інструментами для вивчення та повторення інформації. Вони сприяють активному згадуванню, зручні для вивчення у русі, і можуть бути налаштовані під індивідуальні потреби. Їхню універсальність та залучення роблять їх цінними для опанування різних предметів і концепцій.",

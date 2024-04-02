@@ -9,6 +9,7 @@ import htmlImg from "../../../share/img/projects/html-layout.png";
 import libraryImg from "../../../share/img/projects/library.png";
 import angulImg from "../../../share/img/projects/angul.png";
 import reactImg from "../../../share/img/projects/react.png";
+import portfolioImg from "../../../share/img/projects/portfolio.png";
 
 function Projects() {
   const { t } = useTranslation();
@@ -28,8 +29,19 @@ function Projects() {
       }
     >
       <div className={styles.wrap}>
-        <Project
+      <Project
           id={1}
+          name={t("projects.portfolio.name")}
+          img={portfolioImg}
+          title={t("projects.portfolio.title")}
+          url="https://portfolio-kozak.netlify.app/"
+          openProject={openProject}
+          activeProjectId={activeProjectId}
+          link="https://github.com/ssykkkk/portfolio.git"
+          lang= "React JS"
+        />
+        <Project
+          id={2}
           name={t("projects.flashcards.name")}
           img={flashcardImg}
           title={t("projects.flashcards.title")}
@@ -40,7 +52,7 @@ function Projects() {
           lang= "React JS, Redux"
         />
         <Project
-          id={2}
+          id={3}
           name={t("projects.html.name")}
           img={htmlImg}
           title={t("projects.html.title")}
@@ -51,7 +63,7 @@ function Projects() {
           lang= {t("projects.tooltip.langlayo")}
         />
         <Project
-          id={3}
+          id={4}
           name={t("projects.library.name")}
           img={libraryImg}
           title={t("projects.library.title")}
@@ -63,7 +75,7 @@ function Projects() {
           lang= "PHP"
         />
         <Project
-          id={4}
+          id={5}
           name={t("projects.angl.name")}
           img={angulImg}
           title={t("projects.angl.title")}
@@ -74,7 +86,7 @@ function Projects() {
           lang= "Angular"
         />
         <Project
-          id={5}
+          id={6}
           name={t("projects.angl.name")}
           img={reactImg}
           title={t("projects.angl.title")}
