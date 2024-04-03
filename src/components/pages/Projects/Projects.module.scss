@@ -212,3 +212,20 @@
     }
   }
 }
+@media (max-width: 1400px) {
+  .wrap {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  .project{
+    .tooltip, .leftTooltip{
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: 60px;
+      &::before {
+        content: none;
+      }
+    }
+  }
+}

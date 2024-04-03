@@ -57,7 +57,7 @@ function Projects() {
           img={htmlImg}
           title={t("projects.html.title")}
           url="https://html-layout-app.netlify.app/"
-          isThird={true}
+          isThird = {true}
           openProject={openProject}
           activeProjectId={activeProjectId}
           link="https://github.com/ssykkkk/html-layout.git"

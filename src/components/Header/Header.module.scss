@@ -144,3 +144,43 @@ input:checked[type="checkbox"]:before {
     }
   }
 }
+@media (max-width: 1530px) {
+  .header {
+    .aboutH {
+      .setting {
+        left: 180px;
+      }
+    }
+  }
+}
+@media (max-width: 1500px) {
+  .header {
+    .aboutH {
+      .setting {
+        left: 160px;
+      }
+    }
+  }
+}
+@media (max-width: 1470px) {
+  .header {
+  .menu {
+    > div {
+      a {
+        padding: 15px 40px;
+      }
+    }
+  }
+}
+}
+@media (max-width: 1350px) {
+  .header {
+  .menu {
+    > div {
+      a {
+        padding: 15px 30px;
+      }
+    }
+  }
+}
+}
