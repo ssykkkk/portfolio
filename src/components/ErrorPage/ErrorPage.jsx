@@ -1,5 +1,4 @@
 import React from "react";
-import { withLayout } from "../App/App";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "../../share/ThemeContext";
 import { Link } from "react-router-dom";
