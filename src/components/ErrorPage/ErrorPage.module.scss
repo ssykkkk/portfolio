@@ -1,0 +1,80 @@
+@import "../../var";
+
+.darkTheme {
+  color: $font-color;
+  background-color: $back-color;
+}
+.lightTheme {
+  color: $back-color;
+  background-color: $back-colorLight;
+  .wrap {
+    background-color: $main-colorLight;
+    background-image: url("../../share/img/404dark.png");
+    > div {
+      a {
+        border: 2px solid $less-accent;
+        background-color: $less-accent;
+        color: $back-color;
+        &:hover {
+            background-color: $main-colorLight;
+            border: 2px solid $accent-color;
+            color: $accent-color;
+            transform: scale(1.1);
+          }
+      }
+      h1{
+        color: $main-colorLight;
+      }
+    }
+  }
+}
+.error {
+  width: 100vw;
+  height: 100vh;
+  @extend %flex-aic;
+  justify-content: center;
+  text-align: center;
+}
+.wrap {
+  height: calc(100vh - 60px);
+  width: calc(100vw - 60px);
+  background-image: url("../../share/img/404light.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: $main-color;
+  border-radius: $border-rad;
+  @extend %flex-aic;
+  justify-content: center;
+  text-align: center;
+  > div {
+    @extend %flex-aic;
+    flex-direction: column;
+    gap: 10px;
+    a {
+      margin-top: 10px;
+      border-radius: $border-rad;
+      border: 2px solid $accent-color;
+      background-color: $accent-color;
+      padding: 10px 20px;
+      width: 280px;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: 0.5s;
+      &:hover {
+        background-color: $main-color;
+        color: $accent-color;
+        transform: scale(1.1);
+      }
+    }
+    h1 {
+      font-size: 100px;
+      background-color: rgb(164, 35, 35);
+      border-radius: 20px;
+      padding: 0 40px;
+    }
+    .icon{
+        font-size: 40px;  
+    }
+  }
+}

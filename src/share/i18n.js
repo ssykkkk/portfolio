@@ -119,7 +119,12 @@ i18n.use(initReactI18next).init({
             langlayo: "HTML/CSS without use JS"
           }
         },
-
+        error: {
+          oops: "Oops!",
+          page: "Page not found",
+          look: "The page are you looking for may have been moved, deleted or possibly never existed!",
+          butt: "Go to homepage"
+        }
       },
     },
     uk: {
@@ -232,6 +237,12 @@ i18n.use(initReactI18next).init({
             langlayo: "HTML/CSS без використання JS"
           }
         },
+        error: {
+          oops: "Ой!",
+          page: "Сторінку не знайдено",
+          look: "Сторінку, яку ви шукаєте, можливо, було переміщено, видалено або, можливо, ніколи не існувало!",
+          butt: "Перейти на головну сторінку"
+        }
       },
     },
   },
