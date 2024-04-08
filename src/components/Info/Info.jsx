@@ -10,12 +10,14 @@ import telegram from "../../share/img/telegram.png";
 import InfoContact from "../InfoContact/InfoContact";
 import { useTranslation } from "react-i18next";
 import { useTheme } from '../../share/ThemeContext';
+import { IoMenu } from "react-icons/io5";
 
 export default function Info() {
   const { t } = useTranslation();
   const { darkMode } = useTheme();
   return (
     <div className={darkMode ? `${styles.darkTheme} ${styles.mainInfo}` : `${styles.lightTheme} ${styles.mainInfo}`}>
+      <span className={styles.menuBurger}><IoMenu /></span>
       <div className={styles.mainMe}>
         <div className={styles.myPic}>
           <img src={myPic} alt="Me" />

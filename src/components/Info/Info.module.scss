@@ -93,3 +93,12 @@
       color: $main-colorLight;
     }
   }
+
+  .menuBurger{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
