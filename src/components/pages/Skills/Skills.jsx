@@ -9,6 +9,7 @@ import tsImg from "../../../share/img/typescript.png";
 import bootstrapImg from "../../../share/img/bootstrap.png";
 import sassImg from "../../../share/img/sass.png";
 import jestImg from "../../../share/img/jest.png";
+import wordImg from "../../../share/img/wordpress.png";
 
 function Skills() {
   const { darkMode } = useTheme();
@@ -25,6 +26,7 @@ function Skills() {
         <SkillBlock name="TS" per="60%" img={tsImg} />
         <SkillBlock name="React" per="55%" img={reactImg} />
         <SkillBlock name="Angular" per="40%" img={angularImg} />
+        <SkillBlock name="WordPress" per="40%" img={wordImg} />
         <SkillBlock name="SASS" per="90%" img={sassImg} />
         <SkillBlock name="Bootstrap" per="60%" img={bootstrapImg} />
         <SkillBlock name="Jest" per="20%" img={jestImg} />
